@@ -20,3 +20,13 @@ attendees.each do |name|
 end
 return new_array
 end
+
+def printer(attendees)
+  batch_badge_creator(attendees).each do |a|
+    puts a 
+  end
+  
+  assign_rooms(attendees).each do |a|
+    puts a 
+  end
+end
